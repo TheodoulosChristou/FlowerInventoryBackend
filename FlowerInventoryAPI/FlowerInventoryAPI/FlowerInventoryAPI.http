@@ -1,0 +1,6 @@
+@FlowerInventoryAPI_HostAddress = http://localhost:5215
+
+GET {{FlowerInventoryAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
