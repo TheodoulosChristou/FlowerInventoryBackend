@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlowerInventoryAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c9a73a0fe7d3ae23742ecf564350d34e6923bb6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1101a5c4c47df8714e4e8434388094055035784c")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlowerInventoryAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlowerInventoryAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
