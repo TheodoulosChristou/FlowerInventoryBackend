@@ -17,6 +17,11 @@ namespace FlowerInventoryAPI.Configurations
             builder.Property(f=>f.Price).IsRequired();
 
             builder.Property(f => f.Price).HasPrecision(18, 2);
+
+            builder.HasOne(f => f.Category)
+                .WithMany(c => c.Flowers)
+                .HasForeignKey(f => f.CategoryId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

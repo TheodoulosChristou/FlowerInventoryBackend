@@ -13,9 +13,12 @@ using Microsoft.EntityFrameworkCore;
 
         public DbSet<Flower> Flower { get; set; }
 
+        public DbSet<Category> Category { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
              modelBuilder.ApplyConfiguration(new FlowerConfiguration());
+             modelBuilder.ApplyConfiguration(new CategoryConfiguration());
         }
 }
 
