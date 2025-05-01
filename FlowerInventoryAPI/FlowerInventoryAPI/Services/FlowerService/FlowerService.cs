@@ -110,11 +110,6 @@ namespace FlowerInventoryAPI.Services.FlowerService
                 throw ex;
             }
         }
-
-        
-
-        
-
         
     }
 }

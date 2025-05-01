@@ -563,6 +563,24 @@
           "build/net8.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/9.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.4",
+          "Microsoft.Extensions.Caching.Memory": "9.0.4",
+          "Microsoft.Extensions.Logging": "9.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/9.0.4": {
         "type": "package",
         "dependencies": {
@@ -1013,7 +1031,20 @@
           "buildTransitive/Mono.TextTemplating.targets": {}
         }
       },
-      "Scalar.AspNetCore/2.2.3": {
+      "Newtonsoft.Json/13.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Scalar.AspNetCore/2.2.4": {
         "type": "package",
         "compile": {
           "lib/net9.0/Scalar.AspNetCore.dll": {
@@ -2910,6 +2941,21 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.InMemory/9.0.4": {
+      "sha512": "VHjUwjvN8UKjb8xtKJ/o+dc9tTeHOW3QzlfkzX3JrUspLkPIjwMdZCcw6eS4gsFjby0NFkcXBjHtrgTjVOfO5Q==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.9.0.4.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.Relational/9.0.4": {
       "sha512": "OjJ+xh/wQff5b0wiC3SPvoQqTA2boZeJQf+15+3+OJPtjBKzvxuwr25QRIu1p1t+K8ryQ8pzaoZ7eOpXfNzVGA==",
       "type": "package",
@@ -3595,10 +3641,40 @@
         "readme.md"
       ]
     },
-    "Scalar.AspNetCore/2.2.3": {
-      "sha512": "RnyRF4zYrQ8Z1QNj6VtPV5bdWWhKAtFBRjMntu6JBnPGf0tCjKiqELSo4yXNM6mMpoLtUnaOINAu9MNaAjpOww==",
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
-      "path": "scalar.aspnetcore/2.2.3",
+      "path": "newtonsoft.json/13.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Scalar.AspNetCore/2.2.4": {
+      "sha512": "l7iV3eNIMFjB6qgbAuxXiRvFoZjDlXwI7kbNm3KlLCdjuxR/ZIF51DdnfY4ououDORH3B67qqlEvkEvblUlvjw==",
+      "type": "package",
+      "path": "scalar.aspnetcore/2.2.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3608,7 +3684,7 @@
         "lib/net8.0/Scalar.AspNetCore.xml",
         "lib/net9.0/Scalar.AspNetCore.dll",
         "lib/net9.0/Scalar.AspNetCore.xml",
-        "scalar.aspnetcore.2.2.3.nupkg.sha512",
+        "scalar.aspnetcore.2.2.4.nupkg.sha512",
         "scalar.aspnetcore.nuspec"
       ]
     },
@@ -4804,9 +4880,11 @@
       "Microsoft.AspNetCore.OpenApi >= 9.0.4",
       "Microsoft.EntityFrameworkCore >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
+      "Microsoft.EntityFrameworkCore.InMemory >= 9.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.4",
-      "Scalar.AspNetCore >= 2.2.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "Scalar.AspNetCore >= 2.2.4"
     ]
   },
   "packageFolders": {
@@ -4874,6 +4952,10 @@
             "target": "Package",
             "version": "[9.0.4, )"
           },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[9.0.4, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[9.0.4, )"
@@ -4884,9 +4966,13 @@
             "target": "Package",
             "version": "[9.0.4, )"
           },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.3, )"
+          },
           "Scalar.AspNetCore": {
             "target": "Package",
-            "version": "[2.2.3, )"
+            "version": "[2.2.4, )"
           }
         },
         "imports": [

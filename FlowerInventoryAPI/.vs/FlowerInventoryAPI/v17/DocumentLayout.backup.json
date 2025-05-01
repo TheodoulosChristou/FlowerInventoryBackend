@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F5BBB89-FD10-4F90-992A-630C6306E244}|FlowerInventoryAPI\\FlowerInventoryAPI.csproj|c:\\users\\theodoulos\\desktop\\flowerinventorybackend\\flowerinventorybackend\\flowerinventoryapi\\flowerinventoryapi\\services\\flowerservice\\flowerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5BBB89-FD10-4F90-992A-630C6306E244}|FlowerInventoryAPI\\FlowerInventoryAPI.csproj|solutionrelative:flowerinventoryapi\\services\\flowerservice\\flowerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC6B14CB-60F4-426A-8841-F166F4F979D8}|FlowerInventoryTestAPI\\FlowerInventoryTestAPI.csproj|c:\\users\\theodoulos\\desktop\\flowerinventorybackend\\flowerinventorybackend\\flowerinventoryapi\\flowerinventorytestapi\\flowercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC6B14CB-60F4-426A-8841-F166F4F979D8}|FlowerInventoryTestAPI\\FlowerInventoryTestAPI.csproj|solutionrelative:flowerinventorytestapi\\flowercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0F5BBB89-FD10-4F90-992A-630C6306E244}|FlowerInventoryAPI\\FlowerInventoryAPI.csproj|c:\\users\\theodoulos\\desktop\\flowerinventorybackend\\flowerinventorybackend\\flowerinventoryapi\\flowerinventoryapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5BBB89-FD10-4F90-992A-630C6306E244}|FlowerInventoryAPI\\FlowerInventoryAPI.csproj|solutionrelative:flowerinventoryapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5BBB89-FD10-4F90-992A-630C6306E244}|FlowerInventoryAPI\\FlowerInventoryAPI.csproj|c:\\users\\theodoulos\\desktop\\flowerinventorybackend\\flowerinventorybackend\\flowerinventoryapi\\flowerinventoryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5BBB89-FD10-4F90-992A-630C6306E244}|FlowerInventoryAPI\\FlowerInventoryAPI.csproj|solutionrelative:flowerinventoryapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5BBB89-FD10-4F90-992A-630C6306E244}|FlowerInventoryAPI\\FlowerInventoryAPI.csproj|c:\\users\\theodoulos\\desktop\\flowerinventorybackend\\flowerinventorybackend\\flowerinventoryapi\\flowerinventoryapi\\services\\categoryservice\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5BBB89-FD10-4F90-992A-630C6306E244}|FlowerInventoryAPI\\FlowerInventoryAPI.csproj|solutionrelative:flowerinventoryapi\\services\\categoryservice\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F5BBB89-FD10-4F90-992A-630C6306E244}|FlowerInventoryAPI\\FlowerInventoryAPI.csproj|c:\\users\\theodoulos\\desktop\\flowerinventorybackend\\flowerinventorybackend\\flowerinventoryapi\\flowerinventoryapi\\services\\categoryservice\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F5BBB89-FD10-4F90-992A-630C6306E244}|FlowerInventoryAPI\\FlowerInventoryAPI.csproj|solutionrelative:flowerinventoryapi\\services\\categoryservice\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DC6B14CB-60F4-426A-8841-F166F4F979D8}|FlowerInventoryTestAPI\\FlowerInventoryTestAPI.csproj|c:\\users\\theodoulos\\desktop\\flowerinventorybackend\\flowerinventorybackend\\flowerinventoryapi\\flowerinventorytestapi\\categorycontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC6B14CB-60F4-426A-8841-F166F4F979D8}|FlowerInventoryTestAPI\\FlowerInventoryTestAPI.csproj|solutionrelative:flowerinventorytestapi\\categorycontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FlowerService.cs",
-              "DocumentMoniker": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryAPI\\Services\\FlowerService\\FlowerService.cs",
-              "RelativeDocumentMoniker": "FlowerInventoryAPI\\Services\\FlowerService\\FlowerService.cs",
-              "ToolTip": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryAPI\\Services\\FlowerService\\FlowerService.cs*",
-              "RelativeToolTip": "FlowerInventoryAPI\\Services\\FlowerService\\FlowerService.cs*",
-              "ViewState": "AgIAADAAAAAAAAAAAAAewEcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:36:02.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryAPI\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "FlowerInventoryAPI\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryAPI\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "FlowerInventoryAPI\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAwwDQAAAAFAAAAAAAAAA==",
+              "Title": "CategoryControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryTestAPI\\CategoryControllerTests.cs",
+              "RelativeDocumentMoniker": "FlowerInventoryTestAPI\\CategoryControllerTests.cs",
+              "ToolTip": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryTestAPI\\CategoryControllerTests.cs",
+              "RelativeToolTip": "FlowerInventoryTestAPI\\CategoryControllerTests.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAMwGMAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:27:35.641Z",
+              "WhenOpened": "2025-05-01T09:54:24.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryAPI\\Program.cs",
-              "RelativeDocumentMoniker": "FlowerInventoryAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryAPI\\Program.cs",
-              "RelativeToolTip": "FlowerInventoryAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAB5AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FlowerControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryTestAPI\\FlowerControllerTests.cs",
+              "RelativeDocumentMoniker": "FlowerInventoryTestAPI\\FlowerControllerTests.cs",
+              "ToolTip": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryTestAPI\\FlowerControllerTests.cs",
+              "RelativeToolTip": "FlowerInventoryTestAPI\\FlowerControllerTests.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIAwwCsAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:26:47.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryAPI\\Services\\CategoryService\\CategoryService.cs",
-              "RelativeDocumentMoniker": "FlowerInventoryAPI\\Services\\CategoryService\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryAPI\\Services\\CategoryService\\CategoryService.cs",
-              "RelativeToolTip": "FlowerInventoryAPI\\Services\\CategoryService\\CategoryService.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAwwAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:18:27.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryAPI\\Services\\CategoryService\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "FlowerInventoryAPI\\Services\\CategoryService\\ICategoryService.cs",
-              "ToolTip": "C:\\Users\\Theodoulos\\Desktop\\FlowerInventoryBackend\\FlowerInventoryBackend\\FlowerInventoryAPI\\FlowerInventoryAPI\\Services\\CategoryService\\ICategoryService.cs",
-              "RelativeToolTip": "FlowerInventoryAPI\\Services\\CategoryService\\ICategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T21:17:11.786Z",
+              "WhenOpened": "2025-05-01T10:19:32.738Z",
               "EditorCaption": ""
             }
           ]
