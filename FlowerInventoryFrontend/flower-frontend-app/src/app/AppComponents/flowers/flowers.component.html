@@ -1,0 +1,70 @@
+<div class="container mt-4">
+    <h3 class="mb-3">Flower Inventory</h3>
+  
+    <!-- Button to trigger modal -->
+    <button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#createFlowerModal">
+      Create New Flower
+    </button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="createFlowerModal" tabindex="-1" aria-labelledby="createFlowerModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <form class="modal-content" #flowerForm="ngForm" (ngSubmit)="onSubmit(flowerForm)">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createFlowerModalLabel">Add New Flower</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+  
+          <div class="modal-body">
+            <div class="mb-3">
+              <label class="form-label">Flower Name</label>
+              <input type="text" class="form-control" name="name" [(ngModel)]="newFlower.name" required />
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Category</label>
+              <input type="text" class="form-control" name="category" [(ngModel)]="newFlower.category" required />
+            </div>
+  
+            <div class="mb-3">
+              <label class="form-label">Price</label>
+              <input type="number" class="form-control" name="price" [(ngModel)]="newFlower.price" required min="0.01" step="0.01" />
+            </div>
+          </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-primary" [disabled]="!flowerForm.form.valid" data-bs-dismiss="modal">
+              Save Flower
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Table -->
+    <table class="table table-bordered table-hover mt-3">
+      <thead class="table-dark">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price ($)</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let flower of flowers">
+          <td>{{ flower.flowerId }}</td>
+          <td>{{ flower.name }}</td>
+          <td>{{ flower.category }}</td>
+          <td>{{ flower.price | number: '1.2-2' }}</td>
+          <td>
+            <button class="btn btn-sm btn-primary me-2" (click)="onEdit(flower)">Edit</button>
+            <button class="btn btn-sm btn-danger" (click)="onDelete(flower)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
