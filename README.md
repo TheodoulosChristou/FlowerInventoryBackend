@@ -50,7 +50,6 @@ Follow these steps to set up the backend:
 
 2. **Restore dependencies**:
 Make sure you are in the FlowerInventoryAPI directory, then run:
-  ```bash
   dotnet restore
 
 4. **Set up your local database**:
@@ -59,12 +58,10 @@ Make sure you are in the FlowerInventoryAPI directory, then run:
 
 5. **Run the database migrations**:
   Apply all pending migrations and update the database schema
-  ```bash
   dotnet ef database update
 
 6. **Run the backend**:
   Start the backend application:
-  ```bash
   dotnet run
   The backend will be available at https://localhost:7163.
 
@@ -78,12 +75,10 @@ Follow these steps to set up the frontend:
 
 2. **Install dependencies**:
   Make sure you are in the flower-inventory directory, then run:
-  ```bash
   npm install
 
 3. **Run the frontend**:
    Start the Angular application:
-   ```bash
    ng serve
 
    The frontend will be available at http://localhost:4200.
