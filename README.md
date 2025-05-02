@@ -50,18 +50,21 @@ Follow these steps to set up the backend:
 
 2. **Restore dependencies**:
 Make sure you are in the FlowerInventoryAPI directory, then run:
+  ```bash
   dotnet restore
 
-3. **Set up your local database**:
+4. **Set up your local database**:
   Ensure that your local database (SQL Server or PostgreSQL) is running.
   Update the connection string in appsettings.json to match your local database configuration.
 
-4. **Run the database migrations**:
+5. **Run the database migrations**:
   Apply all pending migrations and update the database schema
+  ```bash
   dotnet ef database update
 
-5. **Run the backend**:
+6. **Run the backend**:
   Start the backend application:
+  ```bash
   dotnet run
   The backend will be available at https://localhost:7163.
 
@@ -69,24 +72,31 @@ Make sure you are in the FlowerInventoryAPI directory, then run:
 Follow these steps to set up the frontend:
 
 1. **Clone the repository (if you haven't already)**:
+    ```bash
     git clone https://github.com/your-username/FlowerInventoryAPI.git
     cd flower-inventory
 
 2. **Install dependencies**:
   Make sure you are in the flower-inventory directory, then run:
+  ```bash
   npm install
 
 3. **Run the frontend**:
    Start the Angular application:
+   ```bash
    ng serve
+
    The frontend will be available at http://localhost:4200.
 
 ### Running Unit Tests (Backend)
 1. **Navigate to the backend project directory**:
+    ```bash
     cd FlowerInventoryTestAPI
 2. **Run unit tests**:
     To execute all unit tests in the project, use:
+    ```bash
     dotnet test
+
     This will run the tests using MSTest.
 
 ### Challenges Faced
