@@ -1,0 +1,99 @@
+<div class="d-flex justify-content-end mt-3">
+  <button class="btn btn-success" [routerLink]="['/admin/flowers/add']">
+    <i class="bi bi-plus-lg"></i> Create Flower
+  </button>
+</div>
+
+
+<table class="table table-bordered table-striped mt-3">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Category ID</th>
+      <th>Category Name</th>
+      <th>Actions</th> <!-- New column -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let flower of flowers">
+      <td>{{ flower.flowerId }}</td>
+      <td>{{ flower.name }}</td>
+      <td>{{ flower.price }}</td>
+      <td>{{ flower.categoryId }}</td>
+      <td>{{flower.category?.categoryName}}</td>
+      <td>
+        <button class="btn btn-sm btn-warning me-2" (click)="openEditModal(flower)">
+          <i class="bi bi-pencil"></i> Edit
+        </button>
+        <button class="btn btn-sm btn-danger" (click)="openDeleteModal(flower)">
+          <i class="bi bi-trash"></i> Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Edit Flower Modal -->
+<div class="modal fade" id="editFlowerModal" tabindex="-1" aria-labelledby="editFlowerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editFlowerModalLabel">Edit Flower</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input name="name" type="text" class="form-control" [(ngModel)]="selectedFlower.name"  />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Price</label>
+            <input [(ngModel)]="selectedFlower.price" name="price" type="number" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Category</label>
+            <select class="form-select" [(ngModel)]="selectedFlower.categoryId" name="categoryId">
+              <option *ngFor="let category of categories" [value]="category.categoryId">
+                {{ category.categoryName }}
+              </option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" (click)="saveFlower(selectedFlower)">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="deleteConfirmationModal" tabindex="-1" aria-labelledby="deleteConfirmationLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-danger text-white">
+        <h5 class="modal-title" id="deleteConfirmationLabel">Confirm Deletion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to delete flower "<strong>{{ selectedFlowerToDelete?.name }}</strong>"?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger" (click)="confirmDeleteFlower()">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container position-fixed top-0 end-0 p-3">
+  <div id="toastMessage" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body" id="toastBody">Toast message</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
